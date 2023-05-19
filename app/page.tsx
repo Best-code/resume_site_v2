@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <MainFrame />
-        <div className="bg-[#eeeeee]">
+        <div id="/STATS" className="bg-[#eeeeee]">
             <Statboxes/>
         </div>
     </>
