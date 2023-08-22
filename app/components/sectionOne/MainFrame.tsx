@@ -22,7 +22,7 @@ export const MainFrame = () => {
             <Navbar />
             <div className="w-full h-2/5 flex flex-col items-center justify-end gap-y-5">
                 <Image src={ColinMaloney} alt="Colin Maloney" className="scale-[.8]" />
-                <h2 className="font-subheader text-4xl font-medium">
+                <h2 className="font-subheader text-4xl font-medium text-white">
                     Software Engineer | Data Scientist | Entrepeneur
                 </h2>
             </div>
