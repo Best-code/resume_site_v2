@@ -18,7 +18,7 @@ const socials: Social[] = [
 
 export const MainFrame = () => {
     return (
-        <section className="w-screen h-screen bg-center bg-cover bg-[url('/FSU.svg')]">
+        <section id="HOME" className="w-screen h-screen bg-center bg-cover bg-[url('/FSU.svg')]">
             <Navbar />
             <div className="w-full h-2/5 flex flex-col items-center justify-end gap-y-5">
                 <Image src={ColinMaloney} alt="Colin Maloney" className="scale-[.8]" />

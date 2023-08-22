@@ -75,7 +75,7 @@ const TweetGroup = () => {
 
 export const Tweets = () => {
     return (
-        <div className="flex flex-col items-center py-12 gap-y-8 overflow-scroll">
+        <div id="SKILLS" className="flex flex-col items-center py-12 gap-y-8 overflow-scroll">
             <TweetGroup/>
             <h3 className="font-black text-white font-header text-3xl">
                --&gt;&gt;&gt; Scroll for Skills --&gt;&gt;&gt;
