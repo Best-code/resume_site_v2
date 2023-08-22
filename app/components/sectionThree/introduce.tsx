@@ -1,3 +1,5 @@
+import FunFact, { FunFactType } from "./FunFact"
+import Dollar from "../../../public/dollar.svg"
 
 const skills: String[] = [
     "Growth Mindest",
@@ -5,6 +7,28 @@ const skills: String[] = [
     "Problem Solver",
     "Self-Starter"
 ]
+
+const FunFacts: FunFactType[] = [
+    {
+        image: Dollar,
+        title: "Co - Founder",
+        subtitle: "Webtech CD",
+        desc: "A thriving business specializing in Website Development, I have successfully leveraged my skills and knowledge to create impactful solutions for a diverse range of clients."
+    },
+    {
+        image: Dollar,
+        title: "Co - Founder",
+        subtitle: "Webtech CD",
+        desc: "A thriving business specializing in Website Development, I have successfully leveraged my skills and knowledge to create impactful solutions for a diverse range of clients."
+    },
+    {
+        image: Dollar,
+        title: "Co - Founder",
+        subtitle: "Webtech CD",
+        desc: "A thriving business specializing in Website Development, I have successfully leveraged my skills and knowledge to create impactful solutions for a diverse range of clients."
+    }
+]
+
 const Top = () => {
     return (
         <div className="container mx-auto py-12 flex flex-col items-center w-full">
@@ -18,7 +42,7 @@ const Top = () => {
                 {skills.map((skill, i) => (
                     <div className="flex gap-x-8 items-center">
                         <p className="w-full text-3xl">{skill}</p>
-                        {i < skills.length-1 ? <p className="text-3xl">|</p> : <></>}
+                        {i < skills.length - 1 ? <p className="text-3xl">|</p> : <></>}
                     </div>
 
                 ))}
@@ -27,12 +51,23 @@ const Top = () => {
     )
 }
 const Bottom = () => {
-
+    return (
+        <div className="container mx-auto flex gap-x-10 py-12">
+            {
+                FunFacts.map((fact: FunFactType, i) => (
+                    <FunFact key={i} obj={fact} />
+                ))
+            }
+        </div>
+    )
 }
 
 export const Introduction = () => {
     return (
-        <Top />
+        <div>
+            <Top />
+            <Bottom />
+        </div>
     )
 }
 
