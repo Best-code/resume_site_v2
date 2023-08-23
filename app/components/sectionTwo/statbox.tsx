@@ -51,7 +51,7 @@ export const Statbox = ({ title, count, growth, append }: Stat) => {
 
 export const Statboxes = () => {
     return (
-        <div id="ABOUT" className="flex w-full items-center justify-between px-48 gap-x-8 py-12 flex-wrap gap-y-8">
+        <div id="ABOUT" className="container mx-auto flex justify-between py-12">
             {boxes.map((box) => {
                 return (<Statbox title={box.title} count={box.count} growth={box.growth} append={box.append} />)
             })}

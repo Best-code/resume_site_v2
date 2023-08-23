@@ -3,6 +3,7 @@ import { MainFrame } from './components/sectionOne/MainFrame'
 import Statboxes from './components/sectionTwo/statbox'
 import Introduction from './components/sectionThree/introduce'
 import Tweets from './components/sectionFour/tweets'
+import GetInTouch from './components/Contactsection/Contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <div id="/TWEETS" className="bg-[#000000]">
             <Tweets/>
         </div>
+        <GetInTouch/>
 
     </>
   )
