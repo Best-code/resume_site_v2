@@ -7,15 +7,17 @@ import GetInTouch from './components/Contactsection/Contact'
 
 export default function Home() {
   return (
-    <div className="container mx-auto flex w-full items-center">
+    <div className="flex flex-col w-full items-center">
+      <div className="w-screen h-screen">
       <MainFrame />
-        {/* <div id="/STATS" className="bg-[#eeeeee]">
-            <Statboxes/>
-        </div>
-        <div id="/INTRO" className="bg-[#ffffff]">
-            <Introduction/>
-        </div>
-        <div id="/TWEETS" className="bg-[#000000]">
+      </div>
+      <div id="/STATS" className="bg-[#eeeeee] w-screen">
+        <Statboxes />
+      </div>
+      <div id="/INTRO" className="bg-[#ffffff] w-screen">
+        <Introduction />
+      </div>
+      {/* <div id="/TWEETS" className="bg-[#000000]">
             <Tweets/>
         </div>
         <GetInTouch/> */}

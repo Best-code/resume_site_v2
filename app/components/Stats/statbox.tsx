@@ -30,11 +30,11 @@ const boxes: Stat[] = [
 
 export const Statbox = ({ title, count, growth, append }: Stat) => {
     return (
-        <div className="flex flex-col w-72 shadow-2xl rounded-xl gap-y-4 px-6 py-3 transition-all duration-200 hover:scale-110">
-            <span className="font-subheader text-[#696969]">
+        <div className="container mx-auto flex flex-col shadow-2xl px-4 rounded-xl gap-y-4 py-3 transition-all duration-200 hover:scale-110">
+            <span className="font-subheader text-[#696969] text-center sm:text-start">
                 {title}
             </span>
-            <div className="flex items-end justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-end items-center justify-between gap-y-2">
                 <span className="font-header text-4xl font-bold text-black">
                     {count}{append}
                 </span>
@@ -51,7 +51,7 @@ export const Statbox = ({ title, count, growth, append }: Stat) => {
 
 export const Statboxes = () => {
     return (
-        <div id="ABOUT" className="container mx-auto flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row justify-between py-12">
+        <div id="ABOUT" className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-y-12 md:gap-y-0 justify-between py-12 gap-x-8 sm:gap-x-12 lg:gap-x-18">
             {boxes.map((box) => {
                 return (<Statbox title={box.title} count={box.count} growth={box.growth} append={box.append} />)
             })}
