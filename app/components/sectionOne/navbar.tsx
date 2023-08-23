@@ -10,9 +10,9 @@ const nav: Navlink[] = [
 
 export const Navbar = () => {
     return (
-        <div className="absolute top-0 w-full h-fit px-72 flex items-center justify-between font-header border-b-2 py-2 font-medium">
+        <div className="absolute top-0 w-full container mx-auto flex items-center justify-between font-header font-medium px-4">
             {nav.map((nav) =>
-                <a href={`${nav.link ? nav.link : "/#"+nav.title}`} className={`transition-colors duration-200 text-white hover:text-[#ababab]`}>
+                <a href={`${nav.link ? nav.link : "/#"+nav.title}`} className={`transition-colors duration-200 text-white text-[.75rem] leading-4 sm:text-sm md:text-[1rem] md:leading-6 lg:text-lg  hover:text-[#ababab]`}>
                     {nav.title}
                 </a>
             )}
