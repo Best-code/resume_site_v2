@@ -16,6 +16,12 @@ const socials: Social[] = [
     { logo: Insta, link: "https://instagram.com/colinpmelons" },
 ]
 
+const Titles: String[] = [
+    "Software Engineer",
+    "Data Scientist",
+    "Entrepreneur"
+]
+
 
 export const MainFrame = () => {
     return (
@@ -24,9 +30,13 @@ export const MainFrame = () => {
             <Navbar />
             <div className="w-full flex flex-col items-center gap-y-5 py-48">
                 <Image src={ColinMaloney} alt="Colin Maloney" className="scale-[.8]" />
-                <h2 className="font-subheader text-2xl md:text-3xl lg:text-4xl font-medium text-white">
-                    Software Engineer | Data Scientist | Entrepreneur
-                </h2>
+                <span className="w-full justify-center items-center flex flex-col md:flex-row">
+                    {Titles.map((title, i) => (
+                        <h2 className="px-8 text-center font-subheader text-3xl lg:text-4xl font-medium text-white">
+                            {title}
+                        </h2>
+                    ))}
+                </span>
             </div>
             <div className="grid grid-cols-4 gap-x-6 md:gap-x-8 lg:gap-x-10 py-4">
                 {socials.map((social) =>

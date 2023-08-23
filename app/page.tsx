@@ -8,7 +8,7 @@ import GetInTouch from './components/Contactsection/Contact'
 export default function Home() {
   return (
     <div className="flex flex-col w-full items-center">
-      <div className="w-screen h-screen">
+      <div className="w-screen h-screen flex">
       <MainFrame />
       </div>
       <div id="/STATS" className="bg-[#eeeeee] w-screen">

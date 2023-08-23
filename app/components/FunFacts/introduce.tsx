@@ -32,15 +32,15 @@ const FunFacts: FunFactType[] = [
 const Top = () => {
     return (
         <div className="container mx-auto py-12 flex flex-col items-center w-full px-4">
-            <h1 className="font-header font-black text-3xl xl:text-5xl pb-8 text-center ">
+            <h1 className="w-full font-header font-black text-3xl xl:text-5xl pb-8 text-center ">
                 Allow me to introduce myself
             </h1>
-            <h2 className="font-bold font-header text-xl xl:text-3xl pb-2">
+            <h2 className="font-bold font-header text-xl xl:text-3xl pb-6 w-full text-center">
                 My name is Colin Maloney
             </h2>
-            <span className="container mx-auto flex flex-wrap w-full justify-center gap-x-8">
+            <span className="container mx-auto flex w-full justify-center gap-x-8">
                 {skills.map((skill, i) => (
-                    <div className="flex gap-x-8 items-center">
+                    <div className="flex gap-x-8 items-center w-full text-center">
                         <p className="w-full text-3xl">{skill}</p>
                     </div>
 
