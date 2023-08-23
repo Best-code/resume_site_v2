@@ -17,10 +17,12 @@ export default function Home() {
       <div id="/INTRO" className="bg-[#ffffff] w-screen">
         <Introduction />
       </div>
-      {/* <div id="/TWEETS" className="bg-[#000000]">
+      <div id="/TWEETS" className="bg-[#000000] w-screen overflow-x-scroll">
             <Tweets/>
         </div>
-        <GetInTouch/> */}
+        <div className="w-screen">
+        <GetInTouch/>
+        </div>
 
     </div>
   )
